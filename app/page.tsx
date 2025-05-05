@@ -8,8 +8,8 @@ export default function Home() {
           <h1 className="mb-3 text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-50 sm:text-5xl">
             Voting Website Comparison
           </h1>
-          <p className="mx-auto max-w-2xl text-slate-600 dark:text-slate-400 px-28">
-            Bandingin Website Gweh sama Org Website, mirip gak cok, Oh iya ini Website cuman depannya aja.
+          <p className="mx-auto max-w-2xl text-slate-600 dark:text-slate-400">
+            Project Akhir Magang. Bandingin Website Gweh sama Org Website, mirip gak cok, Oh iya ini Website cuman depannya aja(Emang disuruhnya gituh).
           </p>
         </header>
 

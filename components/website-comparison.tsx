@@ -141,7 +141,7 @@ export function WebsiteComparison() {
     id: 1,
     name: "Original Website",
     url: "https://dtalk.aconymous.com/",
-    image_url: "https://dtalk.aconymous.com/wp-content/uploads/2025/01/dtalk-light-theme-logo-retina.png",
+    image_url: "/images/original-website.png",
     description: "This is the original dtalk website created by another party.",
   }
 
@@ -149,7 +149,7 @@ export function WebsiteComparison() {
     id: 2,
     name: "Our Recreation",
     url: "https://dtalk-aconymous.vercel.app/",
-    image_url: "https://dtalk-aconymous.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdtalk-dark-theme-logo-retina.5f0f451f.png&w=2048&q=75",
+    image_url: "/images/recreation-website.png",
     description: "This is our recreation attempting to match the original dtalk website's design and functionality.",
   }
 
@@ -180,9 +180,9 @@ export function WebsiteComparison() {
           {!voted ? (
             <div className="space-y-6">
               <div className="flex items-center justify-between">
-                <span className="text-sm text-slate-500 dark:text-slate-400">Not similar but its okelah ya</span>
+                <span className="text-sm text-slate-500 dark:text-slate-400">Kagak Mirip</span>
                 <span className="text-2xl font-bold text-slate-900 dark:text-slate-50">{similarity}%</span>
-                <span className="text-sm text-slate-500 dark:text-slate-400">Perfect, Amazing, Beautifuly</span>
+                <span className="text-sm text-slate-500 dark:text-slate-400">Mirip Sangad</span>
               </div>
 
               <Slider
