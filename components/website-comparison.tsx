@@ -110,7 +110,7 @@ export function WebsiteComparison() {
       })
 
       // Show comments section after voting
-      setShowComments(true)
+      // setShowComments(true)
     } catch (error) {
       console.error("Error submitting vote:", error)
       toast({

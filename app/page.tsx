@@ -1,5 +1,4 @@
 import { WebsiteComparison } from "@/components/website-comparison"
-import { CommentsSection } from "@/components/comments-section"
 
 export default function Home() {
   return (
@@ -15,10 +14,6 @@ export default function Home() {
         </header>
 
         <WebsiteComparison />
-
-        <div className="mt-12">
-          <CommentsSection />
-        </div>
       </div>
     </main>
   )

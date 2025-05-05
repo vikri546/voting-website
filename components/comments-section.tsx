@@ -23,7 +23,7 @@ export function CommentsSection({ currentRating }: { currentRating?: number }) {
   const [comments, setComments] = useState<Comment[]>([])
   const [loading, setLoading] = useState(true)
   const [sortOrder, setSortOrder] = useState<"newest" | "oldest">("newest")
-  const [showForm, setShowForm] = useState(false)
+  const [showForm, setShowForm] = useState(true)
 
   const fetchComments = async () => {
     try {
@@ -82,19 +82,10 @@ export function CommentsSection({ currentRating }: { currentRating?: number }) {
       </CardHeader>
 
       <CardContent className="space-y-4">
-        {!showForm ? (
-          <Button onClick={() => setShowForm(true)} className="w-full">
-            Leave Feedback
-          </Button>
-        ) : (
-          <div className="mb-6 rounded-lg border border-slate-200 p-4 dark:border-slate-800">
-            <h3 className="mb-4 text-lg font-medium">Share Your Feedback</h3>
-            <CommentForm onCommentAdded={handleCommentAdded} currentRating={currentRating} />
-            <Button variant="ghost" className="mt-2 w-full" onClick={() => setShowForm(false)}>
-              Cancel
-            </Button>
-          </div>
-        )}
+        <div className="mb-6 rounded-lg border border-slate-200 p-4 dark:border-slate-800">
+          <h3 className="mb-4 text-lg font-medium">Share Your Feedback</h3>
+          <CommentForm onCommentAdded={handleCommentAdded} currentRating={currentRating} />
+        </div>
 
         {loading ? (
           <div className="flex h-20 items-center justify-center">
