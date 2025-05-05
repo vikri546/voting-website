@@ -141,7 +141,7 @@ export function WebsiteComparison() {
     id: 1,
     name: "Original Website",
     url: "https://dtalk.aconymous.com/",
-    image_url: "/images/original-website.png",
+    image_url: "https://dtalk.aconymous.com/wp-content/uploads/2025/01/dtalk-light-theme-logo-retina.png",
     description: "This is the original dtalk website created by another party.",
   }
 
@@ -149,7 +149,7 @@ export function WebsiteComparison() {
     id: 2,
     name: "Our Recreation",
     url: "https://dtalk-aconymous.vercel.app/",
-    image_url: "/images/recreation-website.png",
+    image_url: "https://dtalk-aconymous.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdtalk-dark-theme-logo-retina.5f0f451f.png&w=2048&q=75",
     description: "This is our recreation attempting to match the original dtalk website's design and functionality.",
   }
 
